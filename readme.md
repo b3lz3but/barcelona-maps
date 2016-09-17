@@ -34,15 +34,15 @@ An single page application shows a map of places to visit in Barcelona. This app
 
 ### How to acces the app
 a) [github.io](https://b3lz3but.github.io/barcelona-maps/)
-a) [github repo](https://github.com/b3lz3but/barcelona-maps)
+b) [github repo](https://github.com/b3lz3but/barcelona-maps)
 
-b) Open a browser and visit localhost:8080
+c) Open a browser and visit localhost:8080
 
 ```bash
 $> cd /path/to/your-project-folder
 $> python -m SimpleHTTPServer 8080
 ```
-b) Download and install [ngrok](https://ngrok.com/) to make your local server accessible remotely.
+  Download and install [ngrok](https://ngrok.com/) to make your local server accessible remotely.
 
 ```bash
 $> cd /path/to/your-project-folder
