@@ -36,12 +36,12 @@ An single page application shows a map of places to visit in Barcelona. This app
 1. Open a browser and visit localhost:8080
 
 ```bash
-  $> cd /path/to/your-project-folder
-  $> python -m SimpleHTTPServer 8080
+$> cd /path/to/your-project-folder
+$> python -m SimpleHTTPServer 8080
 ```
 2. Download and install [ngrok](https://ngrok.com/) to make your local server accessible remotely.
 
-``` bash
+```bash
 $> cd /path/to/your-project-folder
 $> ngrok http 8080
 ```
