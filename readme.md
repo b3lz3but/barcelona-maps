@@ -46,13 +46,12 @@ $> cd /path/to/your-project-folder
 $> ngrok http 8080
 ```
 
-### Helpful Resources
+### Resources
 * [Array.prototype.indexOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
 * [Foursquare for Developers](https://developer.foursquare.com/)
 * [Free Styles for Google Maps](https://snazzymaps.com/)
 * [Google Maps APIs](https://developers.google.com/maps/)
 * [Font-awesome ](https://maxcdn.bootstrapcdn.com/)
-* [Knockout Documentation](http://knockoutjs.com/documentation/introduction.html)
 * [Markdown CheatSheet](http://dillinger.io/)
-* [Documentation, Live Examples and Tutorials in KnockoutJS](http://knockoutjs.com/index.html)
+* [Documentation, Live Examples and Tutorials in KnockoutJS](http://knockoutjs.com/documentation/introduction.html)
 * And also I had some help from a couple of my friends that are allredy web developers (a lot of thanks to them)
