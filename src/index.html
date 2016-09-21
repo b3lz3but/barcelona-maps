@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="=width=device-width, minimum-scale=1.0, initial-scale=0.5">
+  <title>Places to visit in Barcelona</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1><i id="nav-button"  class="fa fa-chevron-up" aria-hidden="true" data-bind="click: navClick, css: {'fa-chevron-down': isNavClosed}"></i>  Visit Barcelona!  </h1>
+  </header>
+  <div id="container" class="container">
+    <div id="menu" class="menu speed" data-bind="css: {'moveUp': isNavClosed}">
+      <div id="floating-panel" class="floating-panel"></div>
+      <div id="list-container" class="list-container">
+        <div id="filter" class="filter">
+          <div>Filter:
+            <form id="filter-form" class="filter-form">
+              <input data-bind="textInput: filter, valueUpdate:'afterkeydown'" autocomplete="on" id="filter-input" class="filter-input" placeholder="filter ex: Sagrada Familia">
+              <button type="submit">Reset Filter</button>
+            </form>
+          </div>
+        </div>
+        <div id="list" class="list">
+          <h2>Places To Visit</h2>
+          <ul data-bind="foreach: filteredPointList, visible: filteredPointList().length > 0" id="list-point" class="list-point">
+            <li data-bind="text: name, click: $root.itemClick"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="map" class="map"></div>
+    <div id="map-error" class="map-error"></div>
+  </div>
+  <!--
+  <script src="js/jQuery.js"></script></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!--  <script src="js/knockout-3.4.0.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+
+  <!-- Map script -->
+  <script type="text/javascript" src="js/main.js"></script>
+
+  <!-- Map error script -->
+  <script type="text/javascript" src="js/error.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAi5kmvH0WbCelVHoKcO04D14V9qIFrPjU&v3&callback=initMap" onerror="mapError()"></script>
+</body>
+
+</html>
