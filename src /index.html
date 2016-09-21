@@ -315,8 +315,8 @@
                       infowindow,
                       bounds;
 
-                    //googleSuccess() is called when page is loaded
-                    function googleSuccess() {
+                    //initmap() is called when page is loaded
+                    function initMap() {
                       "use strict";
 
                       //Google map elements - set custom map marker
@@ -667,7 +667,7 @@
 
         };
   </script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAi5kmvH0WbCelVHoKcO04D14V9qIFrPjU&v3&callback=googleSuccess" onerror="mapError()"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAi5kmvH0WbCelVHoKcO04D14V9qIFrPjU&v3&callback=initMap" onerror="mapError()"></script>
 </body>
 
 </html>
