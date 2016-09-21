@@ -542,8 +542,8 @@
                       }
 
                       // Bounce effect on marker
-                      Location.prototype.toggleBounce = function() {
-                        if (this.marker.getAnimation() !== null) {
+                      function toggleBounce(marker) {
+                        if (marker.getAnimation() !== null) {
                           marker.setAnimation(null);
                         } else {
                           marker.setAnimation(google.maps.Animation.BOUNCE);
