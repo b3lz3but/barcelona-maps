@@ -294,7 +294,7 @@
                         this.fs_id = data.fs_id;
                         this.shortUrl = "";
                         this.photoUrl = "";
-                      }
+                      };
 
                       // Get content infowindows
                       function getContent(point) {
@@ -382,6 +382,14 @@
                                     response.venue.bestPhoto["suffix"];
                               }
                             });
+                            $.ajax({
+                              type: "GET",
+                              url: foursquareUrl,
+                              dataType: "json",
+                              cache: false
+                              }).fail(function() {
+                                alert('Foursquare has failed to load. Please reload and try again later.');
+                              });
                           });
                         });
 
